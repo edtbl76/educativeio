@@ -1,6 +1,5 @@
 package fundamentals.oop.polymorphism;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -8,12 +7,12 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 @Data
 @AllArgsConstructor
-public class Rectangle extends Shape {
+public class Circle extends Shape {
 
-    private double width;
-    private double height;
+    private double radius;
+
     @Override
     public double getArea() {
-        return this.width * this.height;
+        return Math.PI * Math.pow(radius, 2);
     }
 }

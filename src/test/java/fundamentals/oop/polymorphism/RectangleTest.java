@@ -7,18 +7,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RectangleTest {
-    Rectangle rectangle = new Rectangle();
+    Rectangle rectangle = new Rectangle(0d, 0d);
 
     @AfterEach
     void tearDown() {
-        rectangle.setHeight(0);
-        rectangle.setWidth(0);
+        rectangle = null;
     }
 
     @Test
     void testGetArea() {
-        rectangle.setHeight(10);
-        rectangle.setWidth(5);
+        rectangle = new Rectangle(10, 5);
         double result = rectangle.getArea();
         assertEquals(50, result);
     }
@@ -43,13 +41,13 @@ class RectangleTest {
 
     @Test
     void testEquals() {
-        boolean result = rectangle.equals(new Rectangle());
+        boolean result = rectangle.equals(new Rectangle(0d, 0d));
         assertTrue(result);
     }
 
     @Test
     void testCanEqual() {
-        Rectangle newRectangle = new Rectangle();
+        Rectangle newRectangle = new Rectangle(0d, 0d);
         boolean result = rectangle.canEqual(newRectangle);
         assertTrue(result);
     }
@@ -57,7 +55,7 @@ class RectangleTest {
     @Test
     void testHashCode() {
         int result = rectangle.hashCode();
-        assertEquals(new Rectangle().hashCode(), result);
+        assertEquals(new Rectangle(0d,0d).hashCode(), result);
     }
 }
 

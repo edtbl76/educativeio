@@ -1,8 +1,11 @@
 package iteration;
 
+import utils.Generated;
+
 public class FactorialIteration {
 
 
+    @Generated
     private FactorialIteration() {
         throw new IllegalStateException("Utility Class, For Study");
     }
