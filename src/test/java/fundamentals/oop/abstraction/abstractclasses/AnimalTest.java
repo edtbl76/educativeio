@@ -1,6 +1,5 @@
 package fundamentals.oop.abstraction.abstractclasses;
 
-import fundamentals.oop.abstraction.Animal;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

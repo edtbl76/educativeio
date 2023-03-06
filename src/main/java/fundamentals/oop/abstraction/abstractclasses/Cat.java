@@ -1,4 +1,4 @@
-package fundamentals.oop.abstraction;
+package fundamentals.oop.abstraction.abstractclasses;
 
 public class Cat extends Animal {
 

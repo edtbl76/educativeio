@@ -1,7 +1,6 @@
 package fundamentals.oop.abstraction.abstractclasses;
 
 import com.google.common.base.CharMatcher;
-import fundamentals.oop.abstraction.Cat;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package fundamentals.oop.abstraction;
+package fundamentals.oop.abstraction.abstractclasses;
 
 // abstract class
 @SuppressWarnings("java:S1610")
