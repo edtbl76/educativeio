@@ -23,4 +23,5 @@ public class Utils {
         }
         return string.substring(0, pointer + 1);
     }
+
 }

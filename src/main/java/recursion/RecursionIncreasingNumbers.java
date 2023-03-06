@@ -2,7 +2,7 @@ package recursion;
 
 import utils.Generated;
 
-// Hide from Javoco
+// Hide from Jacoco
 @Generated
 public class RecursionIncreasingNumbers {
 
