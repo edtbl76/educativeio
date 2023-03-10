@@ -4,12 +4,12 @@ package structures;
 import lombok.Data;
 
 @Data
-public class Node {
+public class LLNode {
 
     private int value;
-    private Node next;
+    private LLNode next;
 
-    public Node(int value) {
+    public LLNode(int value) {
         this.value = value;
         this.next = null;
     }
