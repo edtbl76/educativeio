@@ -9,6 +9,7 @@ import java.util.LinkedList;
 @SuppressWarnings("java:S106")
 public class DFS {
 
+    @Generated
     static class Graph {
         int vertices;
         LinkedList<Integer>[] adjacency;

@@ -9,7 +9,7 @@ class ArraySortsTest {
 
     @Test
     void testRecursiveSwapSort() {
-        int[] array = new int[]{5, 4, 3, 2, 1};
+        int[] array = new int[]{5, 1, 3, 2, 4};
         int[] sorted = new int[]{1, 2, 3, 4, 5};
         recursiveSwapSort(array, array.length);
         assertArrayEquals(array, sorted);

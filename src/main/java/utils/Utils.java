@@ -29,4 +29,16 @@ public class Utils {
         array[index1] = array[index2];
         array[index2] = temp;
     }
+
+    public static double calculateAmdahlsLaw(int threads, double parallelizable) {
+        double serializable = 1 - parallelizable;
+        double parallelToThreads = parallelizable/threads;
+        return 1 / (serializable + parallelToThreads);
+
+    }
+
+    public static double calculateUtilization(int threads, double parallelizable) {
+        double speedup = calculateAmdahlsLaw(threads, parallelizable);
+        return speedup / threads;
+    }
 }

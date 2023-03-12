@@ -10,6 +10,7 @@ import java.util.Stack;
 public class TopologicalSort {
 
 
+    @Generated
     @SuppressWarnings("java:S1149")
     static class Graph {
         int vertices;
