@@ -78,4 +78,9 @@ class UtilsTest {
         String formattedResult = decimalFormat.format(result);
         assertEquals(formattedExpected, formattedResult);
     }
+
+    @Test
+    void testSummation() {
+        assertEquals(15, summation(5));
+    }
 }

@@ -1,9 +1,12 @@
 package multithreading.threads.threadhandling;
 
+import utils.Generated;
+
 /*
 - This is the proper implementation w/ join() so that we
 see the output of the thread.
  */
+@Generated
 public class JoinDemo2 {
 
     public static void main(String[] args) throws InterruptedException {

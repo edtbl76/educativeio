@@ -1,7 +1,7 @@
 package multithreading.threads.runnables;
 
-import utils.Generated;
 
+import utils.Generated;
 
 /*
     Similar to RunnabelDemo2.
@@ -11,6 +11,7 @@ import utils.Generated;
     - this limits code flexibility, because it is forced to subclass thread.
     - option 2 is nicer.
  */
+
 @Generated
 public class RunnableDemo3 {
 

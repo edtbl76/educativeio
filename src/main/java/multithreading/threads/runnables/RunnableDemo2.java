@@ -1,12 +1,14 @@
 package multithreading.threads.runnables;
 
-import utils.Generated;
 
 /*
     Same as RunnableDemo,
     but instead of using an anonymous class, we are
     creating a separate class that implements the Runnable interface.
  */
+
+import utils.Generated;
+
 @Generated
 public class RunnableDemo2 {
 

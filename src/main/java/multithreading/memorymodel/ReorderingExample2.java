@@ -1,11 +1,13 @@
 package multithreading.memorymodel;
 
+
 import utils.Generated;
 
 @Generated
 @SuppressWarnings("all")
 public class ReorderingExample2 {
 
+    @Generated
     static class MyFavorite {
         int thing;
     }

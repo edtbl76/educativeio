@@ -9,6 +9,6 @@ import static java.lang.annotation.RetentionPolicy.*;
 
 @Documented
 @Retention(RUNTIME)
-@Target({TYPE, METHOD, CONSTRUCTOR})
+@Target({TYPE, METHOD, CONSTRUCTOR, LOCAL_VARIABLE})
 public @interface Generated {
 }
