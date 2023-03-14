@@ -3,14 +3,19 @@ package collections.arraylists.comparisons;
 import utils.Generated;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import static collections.arraylists.comparisons.Position.*;
 
-@SuppressWarnings("all")
+/*
+    Enhancements over Comparator Demo.
+    1.) Collections.sort() replaced w/ List.sort()
+    2.) External comparators are replaced w/ anonymous classes.... one ugly change!
+ */
 @Generated
-public class ComparatorDemo {
+@SuppressWarnings("all")
+public class ComparatorAnonClassDemo2 {
 
     public static void main(String[] args) {
         List<Player> celtics = new ArrayList<>();
@@ -20,26 +25,38 @@ public class ComparatorDemo {
         celtics.add(new Player("Al Horford", POWER_FORWARD, 42));
         celtics.add(new Player("Robert Williams", CENTER, 44));
 
-
         System.out.println("Pre-Sort: ");
         printCeltics(celtics);
 
         // Sort by last name
-        Collections.sort(celtics, new LastNameComparator());
+        celtics.sort(new Comparator<>() {
+            @Override
+            public int compare(Player player1, Player player2) {
+                return player1.getLastName().compareTo(player2.getLastName());
+            }
+        });
         System.out.println("Sorted by last name: ");
         printCeltics(celtics);
 
         // Sort by first name
-        Collections.sort(celtics, new FirstNameComparator());
+        celtics.sort(new Comparator<Player>() {
+            @Override
+            public int compare(Player player1, Player player2) {
+                return player1.getFirstName().compareTo(player2.getFirstName());
+            }
+        });
         System.out.println("Sorted by first name: ");
         printCeltics(celtics);
 
         // Sort by jersey number
-        Collections.sort(celtics, new JerseyComparator());
+        celtics.sort(new Comparator<Player>() {
+            @Override
+            public int compare(Player player1, Player player2) {
+                return player1.getNumber().compareTo(player2.getNumber());
+            }
+        });
         System.out.println("Sorted by jersey: ");
         printCeltics(celtics);
-
-
     }
 
     public static void printCeltics(List<Player> players) {
@@ -49,5 +66,4 @@ public class ComparatorDemo {
             System.out.println("\t" + name + " (" + position + "), #" + player.getNumber());
         });
     }
-
 }
