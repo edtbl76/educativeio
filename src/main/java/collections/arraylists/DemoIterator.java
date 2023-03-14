@@ -1,4 +1,4 @@
-package collections;
+package collections.arraylists;
 
 import utils.Generated;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 @Generated
 @SuppressWarnings("all")
-public class DemoArrayListIterator {
+public class DemoIterator {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package collections;
+package collections.arraylists;
 
 import utils.Generated;
 
@@ -7,7 +7,7 @@ import java.util.List;
 
 @SuppressWarnings("all")
 @Generated
-public class DemoArrayListForLoops {
+public class DemoForLoops {
 
     public static void main(String[] args) {
 
@@ -27,7 +27,8 @@ public class DemoArrayListForLoops {
         }
         System.out.println();
 
-
+        // 3. forEach
+        list.forEach(System.out::println);
 
     }
 }

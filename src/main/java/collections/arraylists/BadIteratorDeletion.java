@@ -1,4 +1,4 @@
-package collections;
+package collections.arraylists;
 
 import utils.Generated;
 

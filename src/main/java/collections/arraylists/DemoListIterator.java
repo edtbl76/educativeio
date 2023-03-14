@@ -1,4 +1,4 @@
-package collections;
+package collections.arraylists;
 
 /*
     ListIterator solves some of the challenges of
@@ -15,7 +15,7 @@ import java.util.ListIterator;
 
 @Generated
 @SuppressWarnings("all")
-public class DemoArrayListListIterator {
+public class DemoListIterator {
 
     public static void main(String[] args) {
 

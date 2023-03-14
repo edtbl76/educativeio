@@ -1,4 +1,4 @@
-package collections;
+package collections.arraylists;
 
 import utils.Generated;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import static java.lang.Integer.valueOf;
 
 @Generated
-public class DemoArrayList {
+public class DemoBasicOperations {
 
     @SuppressWarnings("java:S106")
     public static void main(String[] args) {
